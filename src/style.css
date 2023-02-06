@@ -1,0 +1,105 @@
+/* COLOUR PALETTE */
+
+:root {
+    --primary-dark-colour: #000000;
+    --secondary-dark-colour: #3b3b3b;
+    --primary-light-colour: #ffffff;
+    --secondary-light-colour: #eeeeee;
+}
+
+/* TYPOGRAPHY */
+body {
+    font-family: 'Century Gothic', 'Montserrat', 'Helvetica', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    margin-bottom: 0.5rem;
+    color: inherit;
+}
+
+.dark-header{
+    background: var(--primary-dark-colour);
+    color: var(--primary-light-colour);
+    margin-top: 1.5rem;
+    padding: 0.25rem;
+}
+
+.title-text{
+    font-size: 50px;
+}
+
+/* COMPONENT CUSTOMIZATION */
+
+/* Progress bar */
+.progress-bar{
+    background-color: var(--primary-light-colour);
+}
+
+.progress{
+    background-color: var(--primary-dark-colour);
+    border-style: solid;
+    border-width: thin;
+    border-color: var(--primary-light-colour);
+}
+
+/* Forms */
+.light-form{
+    background: var(--primary-light-colour);
+    border: none;
+    color: var(--primary-dark-colour);
+    margin-left: auto; 
+    margin-right: 0;
+    
+}
+
+.light-form:hover{
+    background: var(--secondary-light-colour);
+    color: var(--primary-dark-colour);
+}
+
+.dark-form{
+    background: var(--primary-dark-colour);
+    border: none;
+    color: var(--primary-light-colour);
+    margin-left: auto; 
+    margin-right: 0;
+    
+}
+
+.dark-form:hover{
+    background: var(--secondary-dark-colour);
+    color: var(--primary-light-colour);
+}
+
+/* card */
+.card{
+    border: none;
+}
+
+/* UTILITIES */
+.upload{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: var(--primary-light-colour);
+}
+
+.upload:hover{
+    opacity: 0.5;
+    transition: .5s ease;
+}
+
+.image{
+    background-color: var(--primary-dark-colour);
+}
+
+.image:hover{
+    opacity: 0.7;
+}
