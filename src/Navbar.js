@@ -18,8 +18,9 @@ function Navbar(props){
                 <Bar.Toggle className='my-2' aria-controls="responsive-navbar-nav" />
                 <Bar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
-                        <Button variant="dark">New character</Button>
+                        <Button variant="dark" onClick={props.resetForm}>New character</Button>
                         <Button variant="dark" onClick={props.handlePrint}>Print</Button>
+                        <Button variant="dark" disabled>Save to database</Button>
                     </Nav>
                 </Bar.Collapse>
             </Bar>
