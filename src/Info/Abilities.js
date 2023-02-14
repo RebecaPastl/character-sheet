@@ -90,7 +90,7 @@ function Abilities(props){
                     </Card>
                     <Form.Control type="file" accept="image/*" ref={hiddenSymbolInput} onChange={handleSymbolSelection} className="d-none" />
                     
-                    <Button as="input" type="reset" value="Reset" ref={props.addToRefs} className="d-none"/>
+                    <Button as="input" type="reset" value="Reset" ref={props.addToRefs} className="d-none" onClick={() => setPreviewSymbol(undefined)}/>
                 </Form>
             </div>
         </>

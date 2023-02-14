@@ -85,7 +85,7 @@ function QuickInfo(props){
                     <Form.Label className="text-white">Hair colour: </Form.Label>
                     <Form.Control type="hair-colour" className="dark-form"/>
 
-                    <Button as="input" type="reset" value="Reset" ref={props.addToRefs} className="d-none"/>
+                    <Button as="input" type="reset" value="Reset" ref={props.addToRefs} className="d-none" onClick={() => setPreviewCharacter(undefined)}/>
                 </ Form>
 
             </div>
