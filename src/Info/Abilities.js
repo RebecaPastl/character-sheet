@@ -10,6 +10,12 @@ function Abilities(props){
 
     const [previewSymbol, setPreviewSymbol] = useState();
     const [selectedSymbol, setSelectedSymbol] = useState();
+    const [valueAbility1, setValueAbility1] = useState(0);
+    const [valueAbility2, setValueAbility2] = useState(0);
+    const [valueAbility3, setValueAbility3] = useState(0);
+    const [changeValueAbility1, setChangeValueAbility1] = useState(false);
+    const [changeValueAbility2, setChangeValueAbility2] = useState(false);
+    const [changeValueAbility3, setChangeValueAbility3] = useState(false);
 
     // transfer click from symbol to input tag
     const hiddenSymbolInput = React.useRef(null);
@@ -59,7 +65,10 @@ function Abilities(props){
                     <div className="my-3">
                         <Row className="my-1">
                             <Col sm={4}>
-                                <ProgressBar now={40} />
+                                {changeValueAbility1
+                                    ? <Form.Control type="valueAbility1" className="dark-form" onBlur={e => { setValueAbility1( e.target.value ); setChangeValueAbility1(false)} } />
+                                    : <ProgressBar now={valueAbility1} onClick={() => setChangeValueAbility1(true) } />
+                                }
                             </Col>
                             <Col sm={8}>
                                 <Form.Control type="ability1" size="sm" className="dark-form"/>
@@ -67,7 +76,10 @@ function Abilities(props){
                         </Row>
                         <Row className="my-1">
                             <Col sm={4}>
-                                <ProgressBar now={40} />
+                                {changeValueAbility2
+                                    ? <Form.Control type="valueAbility2" className="dark-form" onBlur={e => { setValueAbility2( e.target.value ); setChangeValueAbility2(false)} } />
+                                    : <ProgressBar now={valueAbility2} onClick={() => setChangeValueAbility2(true) } />
+                                }
                             </Col>
                             <Col sm={8}>
                                 <Form.Control type="ability2" size="sm" className="dark-form"/>
@@ -75,7 +87,10 @@ function Abilities(props){
                         </Row>
                         <Row className="my-1">
                             <Col sm={4}>
-                                <ProgressBar now={40} />
+                                {changeValueAbility3
+                                    ? <Form.Control type="valueAbility3" className="dark-form" onBlur={e => { setValueAbility3( e.target.value ); setChangeValueAbility3(false)} } />
+                                    : <ProgressBar now={valueAbility3} onClick={() => setChangeValueAbility3(true) } />
+                                }
                             </Col>
                             <Col sm={8}>
                                 <Form.Control type="ability3" size="sm" className="dark-form"/>
@@ -90,7 +105,7 @@ function Abilities(props){
                     </Card>
                     <Form.Control type="file" accept="image/*" ref={hiddenSymbolInput} onChange={handleSymbolSelection} className="d-none" />
                     
-                    <Button as="input" type="reset" value="Reset" ref={props.addToRefs} className="d-none" onClick={() => setPreviewSymbol(undefined)}/>
+                    <Button as="input" type="reset" value="Reset" ref={props.addToRefs} className="d-none" onClick={() => {setPreviewSymbol(undefined); setValueAbility1(0); setValueAbility2(0); setValueAbility3(0)}}/>
                 </Form>
             </div>
         </>
