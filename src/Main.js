@@ -16,12 +16,12 @@ const Main = React.forwardRef((props, ref) => {
         <>
             <Container className='my-5' ref={ref}>
                 <Row>
-                    <Col sm={4} style={{backgroundColor: '#000000'}} className="mt-5" ><QuickInfo addToRefs={props.addToRefs} /></Col>
-                    <Col sm={8} className="mt-5"><DetailedInfo addToRefs={props.addToRefs}/></Col>
+                    <Col sm={4} className="mt-5 bg-narrow"><QuickInfo addToRefs={props.addToRefs} /></Col>
+                    <Col sm={8} className="mt-5 bg-wide"><DetailedInfo addToRefs={props.addToRefs}/></Col>
                 </Row>
                 <Row>
-                    <Col sm={4} style={{backgroundColor: '#000000'}}><Abilities addToRefs={props.addToRefs}/></Col>
-                    <Col sm={8}><History addToRefs={props.addToRefs}/></Col>
+                    <Col sm={4} className="bg-narrow"><Abilities addToRefs={props.addToRefs}/></Col>
+                    <Col sm={8} className="bg-wide"><History addToRefs={props.addToRefs}/></Col>
                 </Row>
             </Container>
         </>

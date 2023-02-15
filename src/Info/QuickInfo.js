@@ -52,37 +52,37 @@ function QuickInfo(props){
                     </Card>
                     <Form.Control type="file" accept="image/*" ref={hiddenCharacterInput} onChange={handleCharacterSelection} className="d-none" />
 
-                    <Form.Label className="text-white font-weight-bold">Avatar: </Form.Label>
+                    <Form.Label className="text-narrow font-weight-bold">Avatar: </Form.Label>
                     <Form.Control type="avatar" className="dark-form"/>
 
-                    <Form.Text className="bg-light mt-4 h6 p-1">
+                    <Form.Text className="header-narrow mt-4 h6 p-1">
                         PERSONAL
                     </Form.Text>
-                    <Form.Label className="text-white">Gender: </Form.Label>
+                    <Form.Label className="text-narrow">Gender: </Form.Label>
                     <Form.Control type="gender" className="dark-form"/>
-                    <Form.Label className="text-white">Genetic sex: </Form.Label>
+                    <Form.Label className="text-narrow">Genetic sex: </Form.Label>
                     <Form.Control type="genetic-sex" className="dark-form"/>
-                    <Form.Label className="text-white">Age: </Form.Label>
+                    <Form.Label className="text-narrow">Age: </Form.Label>
                     <Form.Control type="age" as="textarea" rows={3} className="dark-form"/>
-                    <Form.Label className="text-white">Birth date: </Form.Label>
+                    <Form.Label className="text-narrow">Birth date: </Form.Label>
                     <Form.Control type="birth-date" className="dark-form"/>
-                    <Form.Label className="text-white">Star sign: </Form.Label>
+                    <Form.Label className="text-narrow">Star sign: </Form.Label>
                     <Form.Control type="star-sign" className="dark-form"/>
-                    <Form.Label className="text-white">Blood type: </Form.Label>
+                    <Form.Label className="text-narrow">Blood type: </Form.Label>
                     <Form.Control type="blood-type" className="dark-form"/>
 
-                    <Form.Text className="bg-light mt-4 h6 p-1">
+                    <Form.Text className="header-narrow mt-4 h6 p-1">
                         APPEARANCE
                     </Form.Text>
-                    <Form.Label className="text-white">Height: </Form.Label>
+                    <Form.Label className="text-narrow">Height: </Form.Label>
                     <Form.Control type="height" className="dark-form"/>
-                    <Form.Label className="text-white">Weight: </Form.Label>
+                    <Form.Label className="text-narrow">Weight: </Form.Label>
                     <Form.Control type="weight" className="dark-form"/>
-                    <Form.Label className="text-white">Skin tone: </Form.Label>
+                    <Form.Label className="text-narrow">Skin tone: </Form.Label>
                     <Form.Control type="skin-tone" className="dark-form"/>
-                    <Form.Label className="text-white">Eye colour: </Form.Label>
+                    <Form.Label className="text-narrow">Eye colour: </Form.Label>
                     <Form.Control type="eye-colour" className="dark-form"/>
-                    <Form.Label className="text-white">Hair colour: </Form.Label>
+                    <Form.Label className="text-narrow">Hair colour: </Form.Label>
                     <Form.Control type="hair-colour" className="dark-form"/>
 
                     <Button as="input" type="reset" value="Reset" ref={props.addToRefs} className="d-none" onClick={() => setPreviewCharacter(undefined)}/>

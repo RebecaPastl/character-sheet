@@ -53,14 +53,14 @@ function Abilities(props){
             <div className="p-3">
 
                 <Form>
-                    <Form.Text className="bg-light mt-4 h6 p-1">
+                    <Form.Text className="header-narrow mt-4 h6 p-1">
                         ABILITIES
                     </Form.Text>
-                    <Form.Label className="text-white">Weapon: </Form.Label>
+                    <Form.Label className="text-narrow">Weapon: </Form.Label>
                     <Form.Control type="weapon" className="dark-form"/>
-                    <Form.Label className="text-white">Animal: </Form.Label>
+                    <Form.Label className="text-narrow">Animal: </Form.Label>
                     <Form.Control type="animal" className="dark-form"/>
-                    <Form.Label className="text-white">Talisman: </Form.Label>
+                    <Form.Label className="text-narrow">Talisman: </Form.Label>
                     <Form.Control type="talisman" className="dark-form"/>
                     <div className="my-3">
                         <Row className="my-1">

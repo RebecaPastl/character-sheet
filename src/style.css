@@ -7,6 +7,36 @@
     --secondary-light-colour: #eeeeee;
 }
 
+.bg-narrow {
+    background-color: var(--primary-dark-colour);
+}
+
+.header-narrow{
+    background: var(--primary-light-colour);
+    color: var(--primary-dark-colour);
+    margin-top: 1.5rem;
+    padding: 0.25rem;
+}
+
+.text-narrow{
+    color: var(--primary-light-colour);
+}
+
+.bg-wide {
+    background-color: var(--primary-light-colour);
+}
+
+.header-wide{
+    background: var(--primary-dark-colour);
+    color: var(--primary-light-colour);
+    margin-top: 1.5rem;
+    padding: 0.25rem;
+}
+
+.text-wide{
+    color: var(--primary-dark-colour);
+}
+
 /* TYPOGRAPHY */
 body {
     font-family: 'Century Gothic', 'Montserrat', 'Helvetica', sans-serif;
@@ -15,15 +45,9 @@ body {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
     margin-bottom: 0.5rem;
-    color: inherit;
 }
 
-.dark-header{
-    background: var(--primary-dark-colour);
-    color: var(--primary-light-colour);
-    margin-top: 1.5rem;
-    padding: 0.25rem;
-}
+
 
 .title-text{
     font-size: 50px;
