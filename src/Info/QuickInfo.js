@@ -41,8 +41,7 @@ function QuickInfo(props){
 
     return (
         <>
-            <div className="p-3">
-
+            <div className="pt-5 px-3">
                 <Form className="mb-5">
                     <Card border="dark" className="d-block mx-auto my-2">
                         <Card.Img alt="Character image placeholder" src={previewCharacter || "/images/character-imager-place-holder.png"} className="image" />
@@ -87,7 +86,6 @@ function QuickInfo(props){
 
                     <Button as="input" type="reset" value="Reset" ref={props.addToRefs} className="d-none" onClick={() => setPreviewCharacter(undefined)}/>
                 </ Form>
-
             </div>
         </>
     );

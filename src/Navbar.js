@@ -90,7 +90,7 @@ function Navbar(props){
     return (
 
         <>
-            <Bar collapseOnSelect className="shadow bg-dark py-0 mb-5" variant='dark' expand="lg" fixed='top' >
+            <Bar collapseOnSelect className="shadow bg-dark py-0" variant='dark' expand="lg" fixed='top' >
                 <Bar.Brand>
                     <NavLink className='text-white mr-3 text-decoration-none' to='/'>
                         <FaDiceD20 /> <span className='h1 small'>CS</span>

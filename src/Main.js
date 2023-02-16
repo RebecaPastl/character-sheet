@@ -14,10 +14,10 @@ const Main = React.forwardRef((props, ref) => {
 
     return (
         <>
-            <Container className='my-5' ref={ref}>
+            <Container ref={ref}>
                 <Row>
-                    <Col sm={4} className="mt-5 bg-narrow"><QuickInfo addToRefs={props.addToRefs} /></Col>
-                    <Col sm={8} className="mt-5 bg-wide"><DetailedInfo addToRefs={props.addToRefs}/></Col>
+                    <Col sm={4} className="pt-5 bg-narrow"><QuickInfo addToRefs={props.addToRefs} /></Col>
+                    <Col sm={8} className="pt-5 bg-wide"><DetailedInfo addToRefs={props.addToRefs}/></Col>
                 </Row>
                 <Row>
                     <Col sm={4} className="bg-narrow"><Abilities addToRefs={props.addToRefs}/></Col>
